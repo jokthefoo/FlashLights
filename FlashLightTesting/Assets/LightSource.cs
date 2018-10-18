@@ -20,6 +20,26 @@ public class LightSource : MonoBehaviour {
             baseMats = Resources.LoadAll("Mats/YellowMats", typeof(Material));
         }
         greenMats = Resources.LoadAll("Mats/GreenMats", typeof(Material));
+
+        Invoke("LayerChange", 2);
+    }
+
+    void LayerChange()
+    {
+        ChangeChildLayers(transform.parent.parent.gameObject);
+    }
+
+    private void ChangeChildLayers(GameObject obj)
+    {
+        foreach (Transform child in obj.transform)
+        {
+            var renderer = child.gameObject.GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                renderer.gameObject.layer = 10;
+            }
+            ChangeChildLayers(child.gameObject);
+        }
     }
 	
 	// Update is called once per frame
