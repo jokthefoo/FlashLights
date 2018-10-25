@@ -10,6 +10,7 @@ public class Follow : Invokable {
     private void Start()
     {
         Debug.Log(transform.position);
+        Debug.Log(FollowTarget.transform.position);
     }
 
     public override void Invoke()
