@@ -80,7 +80,7 @@ public class Controls : MonoBehaviour {
         {
             if (blueLight.intensity == 0)
             {
-                blueLight.intensity = 1;
+                blueLight.intensity = 5;
             }
             else
             {
@@ -92,7 +92,7 @@ public class Controls : MonoBehaviour {
         {
             if (yellowLight.intensity == 0)
             {
-                yellowLight.intensity = 1;
+                yellowLight.intensity = 5;
             }
             else
             {

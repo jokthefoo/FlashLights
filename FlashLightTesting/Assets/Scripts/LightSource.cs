@@ -26,7 +26,8 @@ public class LightSource : MonoBehaviour {
 
     void LayerChange()
     {
-        ChangeChildLayers(transform.parent.parent.gameObject);
+        ChangeChildLayers(GameObject.Find("LeftHand"));
+        ChangeChildLayers(GameObject.Find("RightHand"));
     }
 
     private void ChangeChildLayers(GameObject obj)
