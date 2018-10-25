@@ -72,5 +72,32 @@ public class Controls : MonoBehaviour {
                 yellowLight.intensity = 0;
             }
         }
+
+
+
+        if (Valve.VR.SteamVR_Input._default.inActions.GrabGrip.GetStateDown(Valve.VR.SteamVR_Input_Sources.RightHand) ||
+            Valve.VR.SteamVR_Input._default.inActions.GrabGrip.GetStateUp(Valve.VR.SteamVR_Input_Sources.RightHand))
+        {
+            if (blueLight.intensity == 0)
+            {
+                blueLight.intensity = 1;
+            }
+            else
+            {
+                blueLight.intensity = 0;
+            }
+        }
+        if (Valve.VR.SteamVR_Input._default.inActions.GrabGrip.GetStateDown(Valve.VR.SteamVR_Input_Sources.LeftHand) ||
+            Valve.VR.SteamVR_Input._default.inActions.GrabGrip.GetStateUp(Valve.VR.SteamVR_Input_Sources.LeftHand))
+        {
+            if (yellowLight.intensity == 0)
+            {
+                yellowLight.intensity = 1;
+            }
+            else
+            {
+                yellowLight.intensity = 0;
+            }
+        }
     }
 }
