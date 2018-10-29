@@ -7086,7 +7086,7 @@ GameObject:
   - component: {fileID: 1374678276}
   - component: {fileID: 1374678275}
   m_Layer: 12
-  m_Name: Cube
+  m_Name: InvisCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
