@@ -2770,6 +2770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraToCheck: {fileID: 0}
+  enable: 1
 --- !u!1 &2020152847
 GameObject:
   m_ObjectHideFlags: 0
