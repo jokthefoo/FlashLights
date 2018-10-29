@@ -11,6 +11,6 @@ public class Follow : Invokable {
     {
         // follows a straight-line path for now. Need to add pathfinding with obstacles and stuff?
         transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
-        Debug.Log("Following");
+        //Debug.Log("Following");
     }
 }
