@@ -6,6 +6,7 @@ public class Follow : Invokable {
 
     public GameObject FollowTarget;
     public float FollowSpeed;
+    public bool FollowTurn = true;
     AudioClip scraping;
     AudioSource mannequinSounds;
 
@@ -22,7 +23,10 @@ public class Follow : Invokable {
         if(dist > 1)
         {
             transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
-            transform.LookAt(FollowTarget.transform);
+            if(FollowTurn)
+            {
+                transform.LookAt(FollowTarget.transform);
+            }
             if (!mannequinSounds.isPlaying)
                 mannequinSounds.PlayOneShot(scraping);
         }
