@@ -806,7 +806,6 @@ GameObject:
   - component: {fileID: 163798903}
   - component: {fileID: 163798895}
   - component: {fileID: 163798894}
-  - component: {fileID: 163798906}
   - component: {fileID: 163798905}
   m_Layer: 0
   m_Name: Manny (20)
@@ -1148,18 +1147,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &163798906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 163798892}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &173072740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1846,7 +1833,6 @@ GameObject:
   - component: {fileID: 364399719}
   - component: {fileID: 364399711}
   - component: {fileID: 364399710}
-  - component: {fileID: 364399722}
   - component: {fileID: 364399721}
   m_Layer: 0
   m_Name: Manny (9)
@@ -2188,18 +2174,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &364399722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 364399708}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &402784783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2234,6 @@ GameObject:
   - component: {fileID: 412430819}
   - component: {fileID: 412430811}
   - component: {fileID: 412430810}
-  - component: {fileID: 412430822}
   - component: {fileID: 412430821}
   m_Layer: 0
   m_Name: Manny (6)
@@ -2602,18 +2575,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &412430822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 412430808}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &416521564
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,7 +2594,6 @@ GameObject:
   - component: {fileID: 416521575}
   - component: {fileID: 416521567}
   - component: {fileID: 416521566}
-  - component: {fileID: 416521578}
   - component: {fileID: 416521577}
   m_Layer: 0
   m_Name: Manny (15)
@@ -2975,18 +2935,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &416521578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 416521564}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &433816365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,7 +3039,6 @@ GameObject:
   - component: {fileID: 439653261}
   - component: {fileID: 439653253}
   - component: {fileID: 439653252}
-  - component: {fileID: 439653264}
   - component: {fileID: 439653263}
   m_Layer: 0
   m_Name: Manny (1)
@@ -3433,18 +3380,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &439653264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 439653250}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &458049474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3883,7 +3818,6 @@ GameObject:
   - component: {fileID: 633903705}
   - component: {fileID: 633903697}
   - component: {fileID: 633903696}
-  - component: {fileID: 633903708}
   - component: {fileID: 633903707}
   m_Layer: 0
   m_Name: Manny (16)
@@ -4225,18 +4159,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &633903708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 633903694}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &671463107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4256,7 +4178,6 @@ GameObject:
   - component: {fileID: 671463118}
   - component: {fileID: 671463110}
   - component: {fileID: 671463109}
-  - component: {fileID: 671463121}
   - component: {fileID: 671463120}
   m_Layer: 0
   m_Name: Manny (2)
@@ -4598,18 +4519,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &671463121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 671463107}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!4 &672635242 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4503954146426168, guid: c1a2d286e49c19c4eb1b587343300e17,
@@ -4634,7 +4543,6 @@ GameObject:
   - component: {fileID: 685310228}
   - component: {fileID: 685310220}
   - component: {fileID: 685310219}
-  - component: {fileID: 685310231}
   - component: {fileID: 685310230}
   m_Layer: 0
   m_Name: Manny (4)
@@ -4976,18 +4884,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &685310231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685310217}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &687648009
 GameObject:
   m_ObjectHideFlags: 0
@@ -6065,7 +5961,6 @@ GameObject:
   - component: {fileID: 817787435}
   - component: {fileID: 817787427}
   - component: {fileID: 817787426}
-  - component: {fileID: 817787438}
   - component: {fileID: 817787437}
   m_Layer: 0
   m_Name: Manny (13)
@@ -6407,18 +6302,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &817787438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 817787424}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &820862182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6527,7 +6410,6 @@ GameObject:
   - component: {fileID: 860583720}
   - component: {fileID: 860583712}
   - component: {fileID: 860583711}
-  - component: {fileID: 860583723}
   - component: {fileID: 860583722}
   m_Layer: 0
   m_Name: RedManny
@@ -6870,18 +6752,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &860583723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860583709}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &898134458
 GameObject:
   m_ObjectHideFlags: 0
@@ -7270,7 +7140,6 @@ GameObject:
   - component: {fileID: 961242677}
   - component: {fileID: 961242669}
   - component: {fileID: 961242668}
-  - component: {fileID: 961242680}
   - component: {fileID: 961242679}
   m_Layer: 0
   m_Name: WhiteManny
@@ -7613,18 +7482,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &961242680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 961242666}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &971271026
 GameObject:
   m_ObjectHideFlags: 0
@@ -8013,7 +7870,6 @@ GameObject:
   - component: {fileID: 1086253621}
   - component: {fileID: 1086253613}
   - component: {fileID: 1086253612}
-  - component: {fileID: 1086253624}
   - component: {fileID: 1086253623}
   m_Layer: 0
   m_Name: Manny (5)
@@ -8355,18 +8211,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1086253624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1086253610}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1101543394
 GameObject:
   m_ObjectHideFlags: 0
@@ -8427,7 +8271,6 @@ GameObject:
   - component: {fileID: 1102188243}
   - component: {fileID: 1102188235}
   - component: {fileID: 1102188234}
-  - component: {fileID: 1102188246}
   - component: {fileID: 1102188245}
   m_Layer: 0
   m_Name: Manny (19)
@@ -8769,18 +8612,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1102188246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1102188232}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1104633835
 GameObject:
   m_ObjectHideFlags: 0
@@ -9875,7 +9706,6 @@ GameObject:
   - component: {fileID: 1298691534}
   - component: {fileID: 1298691526}
   - component: {fileID: 1298691525}
-  - component: {fileID: 1298691537}
   - component: {fileID: 1298691536}
   m_Layer: 0
   m_Name: Manny (18)
@@ -10217,18 +10047,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1298691537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1298691523}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1300025565 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
@@ -10476,7 +10294,6 @@ GameObject:
   - component: {fileID: 1383811721}
   - component: {fileID: 1383811713}
   - component: {fileID: 1383811712}
-  - component: {fileID: 1383811724}
   - component: {fileID: 1383811723}
   m_Layer: 0
   m_Name: Manny (17)
@@ -10818,18 +10635,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1383811724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1383811710}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1388990062
 GameObject:
   m_ObjectHideFlags: 0
@@ -11134,7 +10939,6 @@ GameObject:
   - component: {fileID: 1449339913}
   - component: {fileID: 1449339905}
   - component: {fileID: 1449339904}
-  - component: {fileID: 1449339916}
   - component: {fileID: 1449339915}
   m_Layer: 0
   m_Name: Manny (3)
@@ -11476,18 +11280,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1449339916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449339902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1513748440
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,7 +11575,6 @@ GameObject:
   - component: {fileID: 1554760494}
   - component: {fileID: 1554760486}
   - component: {fileID: 1554760485}
-  - component: {fileID: 1554760497}
   - component: {fileID: 1554760496}
   m_Layer: 0
   m_Name: BlueManny
@@ -12127,18 +11918,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1554760497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1554760483}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1555294790
 GameObject:
   m_ObjectHideFlags: 0
@@ -13046,7 +12825,6 @@ GameObject:
   - component: {fileID: 1819490643}
   - component: {fileID: 1819490635}
   - component: {fileID: 1819490634}
-  - component: {fileID: 1819490646}
   - component: {fileID: 1819490645}
   m_Layer: 0
   m_Name: Manny (14)
@@ -13388,18 +13166,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1819490646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1819490632}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1850354546
 GameObject:
   m_ObjectHideFlags: 0
@@ -13460,7 +13226,6 @@ GameObject:
   - component: {fileID: 1874071374}
   - component: {fileID: 1874071366}
   - component: {fileID: 1874071365}
-  - component: {fileID: 1874071377}
   - component: {fileID: 1874071376}
   m_Layer: 0
   m_Name: Manny (12)
@@ -13802,18 +13567,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1874071377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1874071363}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &1878909990
 GameObject:
   m_ObjectHideFlags: 0
@@ -14699,7 +14452,6 @@ GameObject:
   - component: {fileID: 2030108897}
   - component: {fileID: 2030108889}
   - component: {fileID: 2030108888}
-  - component: {fileID: 2030108900}
   - component: {fileID: 2030108899}
   m_Layer: 0
   m_Name: Manny (8)
@@ -15041,18 +14793,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2030108900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2030108886}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b7cf173fcdc8140ae7a9d3d0e7a364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 1
 --- !u!1 &2032693981
 GameObject:
   m_ObjectHideFlags: 0
