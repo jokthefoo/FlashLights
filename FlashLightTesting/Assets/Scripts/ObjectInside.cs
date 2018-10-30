@@ -6,6 +6,7 @@ public class ObjectInside : MonoBehaviour {
 
     private bool activated = false;
     public string targetName;
+    private static int activations = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -14,14 +15,19 @@ public class ObjectInside : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if(activations == 3)
+        {
+            Debug.Log("You Win!!");
+        }
 	}
 
     private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.name == targetName && !activated)
         {
-            Debug.Log("INSIDE CIRCLE!!!");
+            other.transform.parent.GetComponent<Follow>().FollowSpeed = 0;
+            activations++;
+            //Debug.Log("INSIDE CIRCLE!!!");
             activated = true;
         }
     }
@@ -30,7 +36,9 @@ public class ObjectInside : MonoBehaviour {
     {
         if (other.gameObject.name == targetName && activated)
         {
-            Debug.Log("LEAVING CIRCLE!!!");
+            other.transform.parent.GetComponent<Follow>().FollowSpeed = 0.01f;
+            activations--;
+            //Debug.Log("LEAVING CIRCLE!!!");
             activated = false;
         }
     }
