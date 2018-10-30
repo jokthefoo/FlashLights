@@ -11,7 +11,7 @@ public class IfNotSeen : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        if (invokables == null)
+        if (invokables.Length == 0)
             invokables = gameObject.GetComponents<Invokable>();
         cameraToCheck = FindObjectOfType<Camera>();
     }
