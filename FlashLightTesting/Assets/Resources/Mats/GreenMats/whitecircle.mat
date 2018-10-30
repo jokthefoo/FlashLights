@@ -26,8 +26,8 @@ Material:
     - _Glossiness: 0.5
     - _LightAngle: 25
     - _LightAngle2: 25
-    - _LightIntensity: 5
-    - _LightIntensity2: 5
+    - _LightIntensity: 25
+    - _LightIntensity2: 25
     - _Metallic: 0
     - _StrengthScalar: 50
     m_Colors:

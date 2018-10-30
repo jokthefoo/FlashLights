@@ -800,8 +800,8 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 0.99149597, b: 0, a: 1}
-  m_Intensity: 5
-  m_Range: 10
+  m_Intensity: 25
+  m_Range: 12
   m_SpotAngle: 25
   m_CookieSize: 10
   m_Shadows:
@@ -812,7 +812,7 @@ Light:
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: 6d7d5e262432ff946897d19b6e2cf414, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 1
@@ -2495,6 +2495,7 @@ MonoBehaviour:
   baseMats:
   - {fileID: 2100000, guid: fbfb73906a1febd488ea73693fe64055, type: 2}
   - {fileID: 2100000, guid: 8e0e42c9e1bf25446abefa4f8cd5556a, type: 2}
+  - {fileID: 2100000, guid: 9c8bc8787d9d51a41b68b211ea0efff9, type: 2}
   - {fileID: 2100000, guid: 059fb185856134b4d95851ef46c4eb88, type: 2}
   - {fileID: 2100000, guid: ca4d6d2effa0f93418d5e77b8166bc2b, type: 2}
   blue: 1
@@ -2514,8 +2515,8 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 0, g: 0.24707961, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 10
+  m_Intensity: 25
+  m_Range: 12
   m_SpotAngle: 25
   m_CookieSize: 10
   m_Shadows:
@@ -2526,7 +2527,7 @@ Light:
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: 6d7d5e262432ff946897d19b6e2cf414, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 1
@@ -10270,7 +10271,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: f1a35569d055cf143affcd3463ac7c63, type: 2}
+  - {fileID: 2100000, guid: 9c8bc8787d9d51a41b68b211ea0efff9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
