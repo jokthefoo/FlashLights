@@ -10,7 +10,11 @@ public class Follow : Invokable {
     public override void Invoke()
     {
         // follows a straight-line path for now. Need to add pathfinding with obstacles and stuff?
-        transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
+        float dist = Vector3.Distance(transform.position, FollowTarget.transform.position);
+        if(dist > 1)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
+        }
         //Debug.Log("Following");
     }
 }
