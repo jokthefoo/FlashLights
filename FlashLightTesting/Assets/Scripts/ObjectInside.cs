@@ -22,7 +22,9 @@ public class ObjectInside : MonoBehaviour
     {
         if (activations == 3)
         {
-            Debug.Log("You Win!!");
+            //Debug.Log("You Win!!");
+            Destroy(GameObject.Find("FinalDoor"));
+            activations = 0;
         }
     }
 
@@ -31,6 +33,7 @@ public class ObjectInside : MonoBehaviour
         if (other.gameObject.name == targetName && !activated)
         {
             other.transform.parent.GetComponent<Follow>().FollowSpeed = 0;
+            other.transform.parent.GetComponent<Rigidbody>().isKinematic = true;
             activations++;
             //Debug.Log("INSIDE CIRCLE!!!");
             activated = true;
@@ -45,6 +48,7 @@ public class ObjectInside : MonoBehaviour
         if (other.gameObject.name == targetName && activated)
         {
             other.transform.parent.GetComponent<Follow>().FollowSpeed = 0.01f;
+            other.transform.parent.GetComponent<Rigidbody>().isKinematic = false;
             activations--;
             //Debug.Log("LEAVING CIRCLE!!!");
             activated = false;
