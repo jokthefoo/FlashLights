@@ -21,7 +21,22 @@ public class IfSeen : MonoBehaviour {
             return;
         Vector3 screenPoint = cameraToCheck.WorldToViewportPoint(transform.position);
         bool onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
-        if (!onScreen)
-            foreach(Invokable i : invokables)
+        if (onScreen)
+        {
+            RaycastHit hit;
+            // Calculate Ray direction
+            Vector3 direction = cameraToCheck.transform.position - transform.position;
+            if (Physics.Raycast(transform.position, direction, out hit))
+            {
+                if (hit.collider.tag != "MainCamera") //hit something else before the camera
+                {
+                    return;
+                }
+                else
+                    foreach (Invokable i in invokables)
+                        if (i.enable)
+                            i.Invoke();
+            }
+        }
     }
 }
