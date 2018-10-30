@@ -127,7 +127,7 @@ public class Controls : MonoBehaviour {
             }
         }
 
-        if(yellowLight.intensity == lightIntensity && blueLight.intensity == lightIntensity)
+        if(yellowLight.intensity > 0 && blueLight.intensity > 0 && !FL_BG.isPlaying)
         {
             FL_BG.PlayOneShot(flashlightPunishment);
         }
