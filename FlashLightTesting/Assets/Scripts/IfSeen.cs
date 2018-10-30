@@ -28,7 +28,7 @@ public class IfSeen : MonoBehaviour {
             Vector3 direction = cameraToCheck.transform.position - transform.position;
             if (Physics.Raycast(transform.position, direction, out hit))
             {
-                if (hit.collider.tag != "MainCamera") //hit something else before the camera
+                if (hit.collider.tag != "MainCamera" && hit.collider.gameObject != gameObject) //hit something else before the camera
                 {
                     return;
                 }

@@ -30,17 +30,15 @@ public class IfNotSeen : MonoBehaviour {
             Vector3 direction = cameraToCheck.transform.position - transform.position;
             if (Physics.Raycast(transform.position, direction, out hit))
             {
-                if (hit.collider.tag != "MainCamera") //hit something else before the camera
+                if (hit.collider.tag != "MainCamera" && hit.collider.gameObject != gameObject) //hit something else before the camera --  not seen but in camera viewport
                 {
-                    return;
-                }
-                else
                     foreach (Invokable i in invokables)
                         if (i.enable)
                             i.Invoke();
+                }
             }
         }
-        else
+        else // completely invisible
             foreach (Invokable i in invokables)
                 if (i.enable)
                     i.Invoke();
