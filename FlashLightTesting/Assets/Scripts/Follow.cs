@@ -22,6 +22,7 @@ public class Follow : Invokable {
         if(dist > 1)
         {
             transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
+            transform.LookAt(FollowTarget.transform);
             if (!mannequinSounds.isPlaying)
                 mannequinSounds.PlayOneShot(scraping);
         }
