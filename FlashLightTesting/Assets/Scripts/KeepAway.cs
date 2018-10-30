@@ -22,7 +22,6 @@ public class KeepAway : MonoBehaviour {
                 if(dist < distance)
                 {
                     // create a pushback effect
-                    Debug.Log(dist);
                     transform.Translate((transform.position - obj.transform.position).normalized);
                 }
 
