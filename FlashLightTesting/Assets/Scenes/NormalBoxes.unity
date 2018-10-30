@@ -296,7 +296,7 @@ Transform:
   - {fileID: 713440699}
   - {fileID: 796375849}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &77983815
 GameObject:
@@ -657,7 +657,7 @@ Transform:
   m_LocalScale: {x: 0.39811397, y: 2.4984431, z: 0.6519497}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &160438575
 GameObject:
@@ -688,7 +688,7 @@ Transform:
   - {fileID: 971271027}
   - {fileID: 722194738}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163798892
 GameObject:
@@ -749,6 +749,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &163798895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1233,7 +1234,7 @@ Transform:
   m_LocalScale: {x: 1.7677575, y: 2.1346266, z: 0.63586015}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188292762
 GameObject:
@@ -1491,7 +1492,7 @@ Transform:
   m_LocalScale: {x: 0.70844877, y: 0.70844835, z: 0.70844835}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 1.292, z: 0}
 --- !u!1 &321521682
 GameObject:
@@ -1586,7 +1587,7 @@ GameObject:
   - component: {fileID: 338441637}
   - component: {fileID: 338441636}
   m_Layer: 0
-  m_Name: sfQuad
+  m_Name: spaceforce
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1645,7 +1646,7 @@ Transform:
   m_LocalScale: {x: 1.54, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &340022343
 GameObject:
@@ -1788,6 +1789,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &364399711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,6 +2203,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &412430811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2573,6 +2576,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &416521567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3030,6 +3034,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &439653253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,8 +3418,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseMats:
+  - {fileID: 2100000, guid: 7e4e6df37559560488b245e14bb36ebc, type: 2}
   - {fileID: 2100000, guid: fbfb73906a1febd488ea73693fe64055, type: 2}
   - {fileID: 2100000, guid: 8e0e42c9e1bf25446abefa4f8cd5556a, type: 2}
+  - {fileID: 2100000, guid: 2ba31eb55b5e0a140ae2fb4efc7fc23d, type: 2}
   - {fileID: 2100000, guid: 9c8bc8787d9d51a41b68b211ea0efff9, type: 2}
   - {fileID: 2100000, guid: 059fb185856134b4d95851ef46c4eb88, type: 2}
   - {fileID: 2100000, guid: ca4d6d2effa0f93418d5e77b8166bc2b, type: 2}
@@ -3819,6 +3826,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &633903697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4191,6 +4199,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &671463110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4568,6 +4577,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &685310220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5024,7 +5034,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: m_Name
@@ -5559,6 +5569,78 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.52, y: 0.6019922, z: 0.66378367}
   m_Center: {x: 0.0000000056850245, y: 0.080768764, z: -0.041421685}
+--- !u!1 &773530676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 773530677}
+  - component: {fileID: 773530679}
+  - component: {fileID: 773530678}
+  m_Layer: 0
+  m_Name: Hat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &773530677
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773530676}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 10.511, z: 0.32}
+  m_LocalScale: {x: 11.852426, y: 11.852415, z: 11.852415}
+  m_Children: []
+  m_Father: {fileID: 1554760484}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!23 &773530678
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773530676}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: 7e4e6df37559560488b245e14bb36ebc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &773530679
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773530676}
+  m_Mesh: {fileID: 4300008, guid: b3ac77097923838428fea9044967ced5, type: 3}
 --- !u!1 &794544219
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,6 +6008,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &817787427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6285,7 +6368,7 @@ Transform:
   - {fileID: 1102188233}
   - {fileID: 163798893}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &830146762
 GameObject:
@@ -6388,6 +6471,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &860583712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7027,7 +7111,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &944154233
 GameObject:
@@ -7130,6 +7214,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &961242669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7687,7 +7772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1035021168}
   m_Layer: 0
-  m_Name: Quads
+  m_Name: SpookyScary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7707,18 +7792,18 @@ Transform:
   - {fileID: 1923294819}
   - {fileID: 1209286711}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1051241802
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 672635242}
     m_Modifications:
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.634533
+      value: 6.524533
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7726,11 +7811,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.098
+      value: 7.288
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalRotation.y
@@ -7746,7 +7831,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
       propertyPath: m_LocalScale.x
@@ -7871,6 +7956,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1086253613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8284,6 +8370,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1102188235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8702,13 +8789,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147847392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 6.09, z: -0.28}
-  m_LocalScale: {x: 0.432364, y: 0.43236396, z: 0.43236396}
+  m_LocalRotation: {x: -0, y: 0.67144096, z: -0, w: 0.7410581}
+  m_LocalPosition: {x: -0.335, y: 10.08, z: 0.958}
+  m_LocalScale: {x: 3.5124266, y: 3.512427, z: 3.512427}
   m_Children: []
   m_Father: {fileID: 1554760484}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 84.357, z: 0}
 --- !u!23 &1147847394
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8724,7 +8811,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: fbfb73906a1febd488ea73693fe64055, type: 2}
+  - {fileID: 2100000, guid: 2ba31eb55b5e0a140ae2fb4efc7fc23d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8750,7 +8837,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147847392}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 65d8eda911e0ba548a3674f65c43308b, type: 3}
 --- !u!1 &1152166380
 GameObject:
   m_ObjectHideFlags: 0
@@ -9418,7 +9505,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4503954146426168, guid: c1a2d286e49c19c4eb1b587343300e17, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1086333020263150, guid: c1a2d286e49c19c4eb1b587343300e17, type: 2}
       propertyPath: m_Name
@@ -9731,6 +9818,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1298691526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10229,7 +10317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377371096
 GameObject:
@@ -10331,6 +10419,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1383811713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10988,6 +11077,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1449339905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11619,6 +11709,7 @@ Transform:
   - {fileID: 2107696188}
   - {fileID: 2028312169}
   - {fileID: 1147847393}
+  - {fileID: 773530677}
   m_Father: {fileID: 820862183}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 280.78998, z: 0}
@@ -11637,6 +11728,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 0
 --- !u!114 &1554760486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12147,7 +12239,7 @@ Transform:
   - {fileID: 1184698675}
   - {fileID: 1175191264}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687487835
 GameObject:
@@ -12453,6 +12545,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 0
+  FollowTurn: 1
 --- !u!114 &1708567554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12671,7 +12764,7 @@ Transform:
   m_Children:
   - {fileID: 770803177}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 176.63, z: 0}
 --- !u!1 &1744194840
 GameObject:
@@ -12896,6 +12989,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1819490635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13309,6 +13403,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &1874071366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13971,7 +14066,7 @@ Transform:
   - {fileID: 1513748441}
   - {fileID: 1308405505}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1944145047
 MeshRenderer:
@@ -14152,6 +14247,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.013
   distance: 0
+  FollowTurn: 1
 --- !u!114 &1944145055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14546,6 +14642,7 @@ MonoBehaviour:
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
   distance: 2
+  FollowTurn: 1
 --- !u!114 &2030108889
 MonoBehaviour:
   m_ObjectHideFlags: 0
