@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - projectile
+  - Mannequin
   layers:
   - Default
   - TransparentFX
