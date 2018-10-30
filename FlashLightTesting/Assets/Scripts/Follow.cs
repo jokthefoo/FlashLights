@@ -10,7 +10,8 @@ public class Follow : Invokable {
     AudioClip scraping;
     AudioSource mannequinSounds;
     GameObject[] objectsToStayAwayFrom;
-    public float distance;
+    public float distanceBetweenMannequins;
+    public float distanceFromPlayer;
 
     private void Start()
     {
@@ -24,14 +25,14 @@ public class Follow : Invokable {
         // follows a straight-line path for now. Need to add pathfinding with obstacles and stuff?
         float dist = Vector3.Distance(transform.position, FollowTarget.transform.position);
         Vector3 pushback = new Vector3();
-        if(dist > 1)
+        if(dist > distanceFromPlayer)
         {
             foreach (GameObject obj in objectsToStayAwayFrom)
             {
                 if (obj != gameObject)
                 {
                     dist = Vector3.Distance(transform.position, obj.transform.position);
-                    if (dist < distance)
+                    if (dist < distanceBetweenMannequins)
                     {
                         pushback += (transform.position - obj.transform.position).normalized;
                     }
