@@ -748,8 +748,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &163798895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,7 +967,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1788,8 +1788,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &364399711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2007,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2202,8 +2202,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &412430811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2421,7 +2421,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2575,8 +2575,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &416521567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2794,7 +2794,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3033,8 +3033,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &439653253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3252,7 +3252,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3825,8 +3825,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &633903697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4044,7 +4044,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4198,8 +4198,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &671463110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4417,7 +4417,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4576,8 +4576,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &685310220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4795,7 +4795,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6007,8 +6007,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &817787427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6226,7 +6226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6470,8 +6470,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &860583712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6689,7 +6689,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7213,8 +7213,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &961242669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7432,7 +7432,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7955,8 +7955,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1086253613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8174,7 +8174,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -8369,8 +8369,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1102188235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8588,7 +8588,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -9817,8 +9817,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1298691526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10036,7 +10036,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10418,8 +10418,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1383811713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10637,7 +10637,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11076,8 +11076,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1449339905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11295,7 +11295,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11727,8 +11727,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 0
+  distance: 2
 --- !u!114 &1554760486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11946,7 +11946,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -12544,8 +12544,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 0
   FollowTurn: 1
+  distance: 0
 --- !u!114 &1708567554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12988,8 +12988,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1819490635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13207,7 +13207,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -13402,8 +13402,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &1874071366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13621,7 +13621,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14246,8 +14246,8 @@ MonoBehaviour:
   enable: 0
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.013
-  distance: 0
   FollowTurn: 1
+  distance: 0
 --- !u!114 &1944145055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14641,8 +14641,8 @@ MonoBehaviour:
   enable: 1
   FollowTarget: {fileID: 6376969}
   FollowSpeed: 0.005
-  distance: 2
   FollowTurn: 1
+  distance: 2
 --- !u!114 &2030108889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14860,7 +14860,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
