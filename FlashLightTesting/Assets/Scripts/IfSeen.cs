@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IfNotSeen : MonoBehaviour {
+public class IfSeen : MonoBehaviour {
 
     public Invokable[] invokables;
     public Camera cameraToCheck;
     public bool enable = false;
 
-    // Use this for initialization
-    void Start()
-    {
-        if (invokables == null)
+	// Use this for initialization
+	void Start () {
+        if(invokables == null)
             invokables = gameObject.GetComponents<Invokable>();
         cameraToCheck = FindObjectOfType<Camera>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
+	
+	// Update is called once per frame
+	void Update () {
         if (!enable)
             return;
         Vector3 screenPoint = cameraToCheck.WorldToViewportPoint(transform.position);
@@ -30,17 +28,15 @@ public class IfNotSeen : MonoBehaviour {
             Vector3 direction = cameraToCheck.transform.position - transform.position;
             if (Physics.Raycast(transform.position, direction, out hit))
             {
-                if (hit.collider.tag != "MainCamera" && hit.collider.gameObject != gameObject) //hit something else before the camera --  not seen but in camera viewport
+                if (hit.collider.tag != "MainCamera" && hit.collider.gameObject != gameObject) //hit something else before the camera
                 {
+                    return;
+                }
+                else
                     foreach (Invokable i in invokables)
                         if (i.enable)
                             i.Invoke();
-                }
             }
         }
-        else // completely invisible
-            foreach (Invokable i in invokables)
-                if (i.enable)
-                    i.Invoke();
     }
 }

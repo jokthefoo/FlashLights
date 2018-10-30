@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Invokable : MonoBehaviour {
 
+    public bool enable = false;
+
 	public virtual void Invoke()
     {
         
