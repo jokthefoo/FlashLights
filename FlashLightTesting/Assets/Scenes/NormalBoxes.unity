@@ -1243,7 +1243,7 @@ GameObject:
   - component: {fileID: 193698545}
   - component: {fileID: 193698544}
   m_Layer: 0
-  m_Name: Cube (13)
+  m_Name: FinalDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
