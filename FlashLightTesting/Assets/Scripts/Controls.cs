@@ -7,15 +7,16 @@ public class Controls : MonoBehaviour {
     public Light yellowLight;
     public Light blueLight;
     private float lightIntensity;
-    AudioClip flashlightOn, flashlightOff;
-    AudioSource audioSource;
+    AudioClip flashlightOn, flashlightOff, flashlightPunishment;
+    public AudioSource audioSource;
+    public AudioSource FL_BG;
 
 	// Use this for initialization
 	void Start () {
         lightIntensity = yellowLight.intensity;
         flashlightOn = Resources.Load<AudioClip>("Sounds/Turn FL On");
         flashlightOff = Resources.Load<AudioClip>("Sounds/Turn FL Off");
-        audioSource = GetComponent<AudioSource>();
+        flashlightPunishment = Resources.Load<AudioClip>("Sounds/Flashlight On Punishment");
     }
 	
 	// Update is called once per frame
@@ -61,10 +62,14 @@ public class Controls : MonoBehaviour {
             if(blueLight.intensity == 0)
             {
                 blueLight.intensity = 1;
+                audioSource.panStereo = 0.5f;
+                audioSource.PlayOneShot(flashlightOn);
             }
             else
             {
                 blueLight.intensity = 0;
+                audioSource.panStereo = 0.5f;
+                audioSource.PlayOneShot(flashlightOff);
             }
         }
         if (Input.GetKeyDown(KeyCode.X))
@@ -72,10 +77,14 @@ public class Controls : MonoBehaviour {
             if (yellowLight.intensity == 0)
             {
                 yellowLight.intensity = 1;
+                audioSource.panStereo = -0.5f;
+                audioSource.PlayOneShot(flashlightOn);
             }
             else
             {
                 yellowLight.intensity = 0;
+                audioSource.panStereo = -0.5f;
+                audioSource.PlayOneShot(flashlightOff);
             }
         }
 
@@ -94,6 +103,8 @@ public class Controls : MonoBehaviour {
             {
                 blueLight.intensity = 0;
                 audioSource.panStereo = 0.5f;
+                if (FL_BG.isPlaying)
+                    FL_BG.Pause();
                 audioSource.PlayOneShot(flashlightOff);
             }
         }
@@ -110,8 +121,15 @@ public class Controls : MonoBehaviour {
             {
                 yellowLight.intensity = 0;
                 audioSource.panStereo = -0.5f;
+                if (FL_BG.isPlaying)
+                    FL_BG.Pause();
                 audioSource.PlayOneShot(flashlightOff);
             }
+        }
+
+        if(yellowLight.intensity == lightIntensity && blueLight.intensity == lightIntensity)
+        {
+            FL_BG.PlayOneShot(flashlightPunishment);
         }
     }
 }
