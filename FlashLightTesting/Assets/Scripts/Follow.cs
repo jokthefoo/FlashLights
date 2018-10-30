@@ -11,6 +11,7 @@ public class Follow : Invokable {
 
     private void Start()
     {
+        mannequinSounds = GetComponent<AudioSource>();
         scraping = Resources.Load<AudioClip>("Sounds/Mannequin Slow");
     }
 
