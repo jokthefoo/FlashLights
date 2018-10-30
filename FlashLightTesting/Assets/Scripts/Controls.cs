@@ -7,11 +7,16 @@ public class Controls : MonoBehaviour {
     public Light yellowLight;
     public Light blueLight;
     private float lightIntensity;
+    AudioClip flashlightOn, flashlightOff;
+    AudioSource audioSource;
 
 	// Use this for initialization
 	void Start () {
         lightIntensity = yellowLight.intensity;
-	}
+        flashlightOn = Resources.Load<AudioClip>("Sounds/Turn FL On");
+        flashlightOff = Resources.Load<AudioClip>("Sounds/Turn FL Off");
+        audioSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -82,10 +87,14 @@ public class Controls : MonoBehaviour {
             if (blueLight.intensity == 0)
             {
                 blueLight.intensity = lightIntensity;
+                audioSource.panStereo = 0.5f;
+                audioSource.PlayOneShot(flashlightOn);
             }
             else
             {
                 blueLight.intensity = 0;
+                audioSource.panStereo = 0.5f;
+                audioSource.PlayOneShot(flashlightOff);
             }
         }
         if (Valve.VR.SteamVR_Input._default.inActions.GrabGrip.GetStateDown(Valve.VR.SteamVR_Input_Sources.LeftHand) ||
@@ -94,10 +103,14 @@ public class Controls : MonoBehaviour {
             if (yellowLight.intensity == 0)
             {
                 yellowLight.intensity = lightIntensity;
+                audioSource.panStereo = -0.5f;
+                audioSource.PlayOneShot(flashlightOn);
             }
             else
             {
                 yellowLight.intensity = 0;
+                audioSource.panStereo = -0.5f;
+                audioSource.PlayOneShot(flashlightOff);
             }
         }
     }
