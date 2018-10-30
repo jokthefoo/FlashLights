@@ -6,6 +6,13 @@ public class Follow : Invokable {
 
     public GameObject FollowTarget;
     public float FollowSpeed;
+    AudioClip scraping;
+    AudioSource mannequinSounds;
+
+    private void Start()
+    {
+        scraping = Resources.Load<AudioClip>("Sounds/Mannequin Slow");
+    }
 
     public override void Invoke()
     {
@@ -14,6 +21,8 @@ public class Follow : Invokable {
         if(dist > 1)
         {
             transform.position = Vector3.MoveTowards(transform.position, FollowTarget.transform.position, FollowSpeed);
+            if (!mannequinSounds.isPlaying)
+                mannequinSounds.PlayOneShot(scraping);
         }
         //Debug.Log("Following");
     }
