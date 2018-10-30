@@ -6,10 +6,11 @@ public class Controls : MonoBehaviour {
 
     public Light yellowLight;
     public Light blueLight;
+    private float lightIntensity;
 
 	// Use this for initialization
 	void Start () {
-		
+        lightIntensity = yellowLight.intensity;
 	}
 	
 	// Update is called once per frame
@@ -80,7 +81,7 @@ public class Controls : MonoBehaviour {
         {
             if (blueLight.intensity == 0)
             {
-                blueLight.intensity = 5;
+                blueLight.intensity = lightIntensity;
             }
             else
             {
@@ -92,7 +93,7 @@ public class Controls : MonoBehaviour {
         {
             if (yellowLight.intensity == 0)
             {
-                yellowLight.intensity = 5;
+                yellowLight.intensity = lightIntensity;
             }
             else
             {
