@@ -20,7 +20,7 @@ public class ObjectInside : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activations == 3)
+        if (activations == 1)
         {
             //Debug.Log("You Win!!");
             Destroy(GameObject.Find("FinalDoor"));
