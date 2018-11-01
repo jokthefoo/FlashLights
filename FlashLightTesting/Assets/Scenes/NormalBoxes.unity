@@ -322,6 +322,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!136 &6376975
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 6376969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 4.76
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &13047593
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,11 +961,11 @@ GameObject:
   - component: {fileID: 255570765}
   - component: {fileID: 255570764}
   - component: {fileID: 255570763}
-  - component: {fileID: 255570762}
   - component: {fileID: 255570761}
   - component: {fileID: 255570760}
   - component: {fileID: 255570759}
   - component: {fileID: 255570758}
+  - component: {fileID: 255570770}
   m_Layer: 0
   m_Name: RedManny (5)
   m_TagString: Mannequin
@@ -1115,21 +1128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &255570762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 255570756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 255570761}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &255570763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1181,7 +1179,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 255570770}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -1294,6 +1303,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255570756}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &255570770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255570756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &276611884 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 8f3ea8784086ae14dbaafb1f1f292689, type: 3}
@@ -2003,11 +2023,11 @@ GameObject:
   - component: {fileID: 650170574}
   - component: {fileID: 650170573}
   - component: {fileID: 650170572}
-  - component: {fileID: 650170571}
   - component: {fileID: 650170570}
   - component: {fileID: 650170569}
   - component: {fileID: 650170568}
   - component: {fileID: 650170567}
+  - component: {fileID: 650170579}
   m_Layer: 0
   m_Name: RedManny (1)
   m_TagString: Mannequin
@@ -2170,21 +2190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &650170571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 650170565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 650170570}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &650170572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,7 +2241,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 650170579}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -2349,6 +2365,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 650170565}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &650170579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650170565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &669045057
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,6 +2668,26 @@ Prefab:
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.57579726
+      objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 121078, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 101548, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114188, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 133480, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 2}
@@ -3467,11 +3514,11 @@ GameObject:
   - component: {fileID: 860583715}
   - component: {fileID: 860583714}
   - component: {fileID: 860583713}
-  - component: {fileID: 860583721}
   - component: {fileID: 860583720}
   - component: {fileID: 860583712}
   - component: {fileID: 860583711}
   - component: {fileID: 860583722}
+  - component: {fileID: 860583723}
   m_Layer: 0
   m_Name: RedManny
   m_TagString: Mannequin
@@ -3578,7 +3625,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 860583723}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -3703,21 +3761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &860583721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 860583709}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 860583720}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!82 &860583722
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3813,6 +3856,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &860583723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860583709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &892784931
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,11 +3882,11 @@ GameObject:
   - component: {fileID: 892784940}
   - component: {fileID: 892784939}
   - component: {fileID: 892784938}
-  - component: {fileID: 892784937}
   - component: {fileID: 892784936}
   - component: {fileID: 892784935}
   - component: {fileID: 892784934}
   - component: {fileID: 892784933}
+  - component: {fileID: 892784945}
   m_Layer: 0
   m_Name: RedManny (2)
   m_TagString: Mannequin
@@ -3995,21 +4049,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &892784937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 892784931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 892784936}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &892784938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4061,7 +4100,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892784945}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -4174,6 +4224,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 892784931}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &892784945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 892784931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &893325573
 Prefab:
   m_ObjectHideFlags: 0
@@ -4885,6 +4946,7 @@ GameObject:
   - component: {fileID: 1175191267}
   - component: {fileID: 1175191266}
   - component: {fileID: 1175191265}
+  - component: {fileID: 1175191269}
   m_Layer: 0
   m_Name: TeleportArea (1)
   m_TagString: Untagged
@@ -4974,6 +5036,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1175191263}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1175191269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175191263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4d74185f92775a4290fa425b5f5b394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mannies: []
 --- !u!1 &1184698674
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,11 +5412,11 @@ GameObject:
   - component: {fileID: 1248857874}
   - component: {fileID: 1248857873}
   - component: {fileID: 1248857872}
-  - component: {fileID: 1248857871}
   - component: {fileID: 1248857870}
   - component: {fileID: 1248857869}
   - component: {fileID: 1248857868}
   - component: {fileID: 1248857867}
+  - component: {fileID: 1248857879}
   m_Layer: 0
   m_Name: RedManny (4)
   m_TagString: Mannequin
@@ -5505,21 +5579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &1248857871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1248857865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 1248857870}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &1248857872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5571,7 +5630,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1248857879}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -5684,6 +5754,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1248857865}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &1248857879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1248857865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1276935287
 Prefab:
   m_ObjectHideFlags: 0
@@ -5906,6 +5987,11 @@ Prefab:
     - target: {fileID: 4448668195943824, guid: c1a2d286e49c19c4eb1b587343300e17, type: 2}
       propertyPath: m_LocalPosition.z
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 65267217815257670, guid: c1a2d286e49c19c4eb1b587343300e17,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c1a2d286e49c19c4eb1b587343300e17, type: 2}
@@ -6451,11 +6537,11 @@ GameObject:
   - component: {fileID: 1554760489}
   - component: {fileID: 1554760488}
   - component: {fileID: 1554760487}
-  - component: {fileID: 1554760495}
   - component: {fileID: 1554760494}
   - component: {fileID: 1554760486}
   - component: {fileID: 1554760485}
   - component: {fileID: 1554760496}
+  - component: {fileID: 1554760497}
   m_Layer: 0
   m_Name: BlueManny
   m_TagString: Mannequin
@@ -6564,7 +6650,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1554760497}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -6689,21 +6786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &1554760495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1554760483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 1554760494}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!82 &1554760496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6799,6 +6881,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1554760497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1554760483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1579802819
 GameObject:
   m_ObjectHideFlags: 0
@@ -7218,11 +7311,11 @@ GameObject:
   - component: {fileID: 1855328614}
   - component: {fileID: 1855328613}
   - component: {fileID: 1855328612}
-  - component: {fileID: 1855328611}
   - component: {fileID: 1855328610}
   - component: {fileID: 1855328609}
   - component: {fileID: 1855328608}
   - component: {fileID: 1855328607}
+  - component: {fileID: 1855328619}
   m_Layer: 0
   m_Name: RedManny (3)
   m_TagString: Mannequin
@@ -7385,21 +7478,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &1855328611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1855328605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 1855328610}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &1855328612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7451,7 +7529,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1855328619}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -7564,6 +7653,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1855328605}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &1855328619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855328605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1871541753
 GameObject:
   m_ObjectHideFlags: 0
@@ -8361,11 +8461,11 @@ GameObject:
   - component: {fileID: 2123265500}
   - component: {fileID: 2123265499}
   - component: {fileID: 2123265498}
-  - component: {fileID: 2123265497}
   - component: {fileID: 2123265496}
   - component: {fileID: 2123265495}
   - component: {fileID: 2123265494}
   - component: {fileID: 2123265493}
+  - component: {fileID: 2123265505}
   m_Layer: 0
   m_Name: RedManny (6)
   m_TagString: Mannequin
@@ -8528,21 +8628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enable: 1
---- !u!114 &2123265497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2123265491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc7f1950d95e2541a899fc787a51f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokables:
-  - {fileID: 2123265496}
-  cameraToCheck: {fileID: 0}
-  enable: 1
 --- !u!114 &2123265498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8594,7 +8679,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   onDetachFromHand:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2123265505}
+        m_MethodName: keepUpright
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   snapAttachEaseInCompleted: 0
@@ -8707,3 +8803,14 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2123265491}
   m_Mesh: {fileID: 4300000, guid: 2377ace2c12cd44428d8d0c9ed7da4b8, type: 3}
+--- !u!114 &2123265505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123265491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2930fec36d0fe3f41920d6c330c4704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
